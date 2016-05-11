@@ -6,6 +6,8 @@ var map;
 var template;
 
 $(document).on("ready", function() {
+
+	initMap();
  	$quakesList = $.ajax( {
 	method:"GET",
 	url: weekly_quakes_endpoint
@@ -26,3 +28,9 @@ $(document).on("ready", function() {
  });
 });
 
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 37.78, lng: -122.44},
+    zoom: 3
+});
+      }
