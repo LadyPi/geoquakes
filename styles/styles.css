@@ -5,3 +5,19 @@
   height: 600px;
   margin-top: 20px;
 }
+
+var weekly_quakes_endpoint = 
+var $quakeLIst;
+var map;
+var template;
+
+$(document).on("ready", function() {
+	
+	$quakeList = $.ajax( {
+	method:"GET",
+	
+
+	}
+
+
+});
